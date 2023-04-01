@@ -1,0 +1,95 @@
+.Modal{
+    background-color: rgba(0, 0, 0, 0.225);
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+}
+
+.popup{
+    background-color: white;
+    width: 60%;
+    aspect-ratio: 16 / 9;
+
+    padding-inline: 1%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.popup section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.imgs{
+    width: 50%;
+}
+
+img{
+    width: 100%;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.info hr{
+    width: 100%;
+    margin-block: 5px;
+}
+
+.info p, .info li{
+    font-size: small;
+}
+
+.info ul{
+    margin-left: 15%;
+}
+
+.info .overview{
+    font-size: x-small;
+}
+
+.info button{
+    background-color: darkorchid;
+    margin: 5px;
+    padding: 10px 50px;
+
+    border-radius: 10px;
+    border: 0;
+    font-weight: bold;
+    background-color: white;
+    border: 1px solid darkorchid;
+    color: darkorchid;
+}
+
+.info button:hover{
+    transform: scale(1.1);
+}
+
+.info button:active{
+    background-color: darkorchid;
+    color: white;
+}
+
+@media screen and (max-width: 480px) {
+    .popup{
+        width: 95%;
+    }
+    .imgs{
+        width: 100%;
+    }
+}

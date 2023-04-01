@@ -1,0 +1,29 @@
+.Header{
+    background-image: url('https://www.smsgatewayhub.com/Website/images/dlt-bloackchain.jpg');
+    background-size: contain;
+    background-repeat: repeat-x;
+    background-position: right;
+
+    color: white;
+
+    padding-inline: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Header h2{
+    font-size: 38px;
+}
+
+.Header h1{
+    font-size: 54px;
+}
+
+@media screen and (max-width: 480px) {
+    .Header{
+        background-size: cover;
+        background-position: center;
+        padding-inline: 5%;
+    }
+}

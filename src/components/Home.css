@@ -1,0 +1,22 @@
+.Home{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 7vh 43vh auto;
+    overflow-y: scroll;
+}
+
+.Nav{
+    width: 100%;
+    height: 100%;
+}
+
+.Header{
+    width: 100%;
+    height: 100%;
+}
+
+.Main{
+    width: 100%;
+    height: 100%;
+}

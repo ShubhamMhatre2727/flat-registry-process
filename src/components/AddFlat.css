@@ -1,0 +1,40 @@
+.formModal{
+    background-color: rgba(0, 0, 0, 0.225);
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top: 0;
+    left: 0;
+
+    display: grid;
+    place-items: center;
+}
+
+.formPopup{
+    background-color: white;
+    width: 60%;
+    aspect-ratio: 16 / 9;
+
+    padding-inline: 1%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-inline: 10%;
+}
+
+form input{
+    width: 100%;
+    padding: 5px;
+    margin: 5px;
+}
+
+@media screen and (max-width: 480px) {
+    .formPopup{
+        width: 90%;
+    }
+}

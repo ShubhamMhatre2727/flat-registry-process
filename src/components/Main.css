@@ -1,0 +1,40 @@
+.Main{
+    padding-inline: 20%;
+    padding-block: 3%;
+}
+
+.Flats{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.Wrap{
+    width: 30%;
+    border: 2px solid rgb(0 0 0 / 0.2);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+    font-size: small;
+
+    margin-top: 20px;
+    padding-bottom: 5px;
+}
+
+.Wrap img{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+.Wrap h3, .Wrap p{
+    padding-inline: 5px;
+}
+
+@media screen and (max-width: 480px) {
+    .Main{
+        padding-inline: 5%;
+        /* overflow-y: scroll; */
+    }
+    .Wrap{
+        width: 100%;
+    }
+}
