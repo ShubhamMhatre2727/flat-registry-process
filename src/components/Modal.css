@@ -1,8 +1,8 @@
-.Modal{
+.Modal {
     background-color: rgba(0, 0, 0, 0.225);
     width: 100%;
     height: 100%;
-    position:absolute;
+    position: absolute;
     top: 0;
     left: 0;
 
@@ -13,7 +13,7 @@
     text-align: start;
 }
 
-.popup{
+.popup {
     background-color: white;
     width: 60%;
     aspect-ratio: 16 / 9;
@@ -25,6 +25,10 @@
     align-items: end;
 }
 
+.Modal .popup .close_modal {
+    cursor: pointer;
+}
+
 .popup section {
     display: flex;
     flex-wrap: wrap;
@@ -32,38 +36,43 @@
     align-items: center;
 }
 
-.imgs{
+.imgs {
     width: 50%;
 }
 
-img{
+img {
     width: 100%;
+
+    /* Changes  */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* Changes  */
 }
 
-.info{
+.info {
     display: flex;
     flex-direction: column;
     align-items: start;
 }
 
-.info hr{
+.info hr {
     width: 100%;
     margin-block: 5px;
 }
 
-.info p, .info li{
+.info p, .info li {
     font-size: small;
 }
 
-.info ul{
+.info ul {
     margin-left: 15%;
 }
 
-.info .overview{
+.info .overview {
     font-size: x-small;
 }
 
-.info button{
+.info button {
     background-color: darkorchid;
     margin: 5px;
     padding: 10px 50px;
@@ -74,22 +83,34 @@ img{
     background-color: white;
     border: 1px solid darkorchid;
     color: darkorchid;
+
+    /* Changes  */
+    cursor: pointer;
+    transition: all 0.5s;
+    /* Changes  */
 }
 
-.info button:hover{
+.info button:hover {
     transform: scale(1.1);
+
+    /* Changes  */
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+    /* Changes  */
 }
 
-.info button:active{
+.info button:active {
     background-color: darkorchid;
     color: white;
 }
 
 @media screen and (max-width: 480px) {
-    .popup{
+    .popup {
         width: 95%;
     }
-    .imgs{
+
+    .imgs {
         width: 100%;
     }
 }
