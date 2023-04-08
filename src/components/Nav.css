@@ -1,39 +1,42 @@
-.Nav{
+.Nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     padding-inline: 15%;
 
-    background-color: darkorchid;
+    background-color: black;
+    border: 0.1px solid white;
+    border-radius: 5px;
     color: white;
 }
 
-.content{
+.content {
     display: inherit;
     color: rgba(255, 255, 255, 0.884);
     text-shadow: 1px 1px 2px black;
 }
 
-.content :nth-child(2){
+.content :nth-child(2) {
     color: white;
     padding-inline: 10px;
     border: 1px solid white;
     border-radius: 5px;
+    cursor: pointer;
 }
 
-.content :nth-child(2):active{
+.content :nth-child(2):active {
     background-color: #444;
 }
 
-.Nav .icon{
+.Nav .icon {
     /* border: 1px solid white; */
     /* padding-inline: 5px; */
     text-shadow: 1px 1px 2px black;
     /* box-shadow: 1px 1px 2px black; */
 }
 
-.Nav button{
+.Nav button {
     background-color: rgb(69, 69, 255);
     color: white;
     border-radius: 10px;
@@ -41,19 +44,28 @@
     border: 0;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     text-shadow: 1px 1px 2px black;
+    cursor: pointer;
 }
 
-.Nav button:hover{
+.Nav button:hover {
     transform: scale(1.1);
     transition: transforn 2s ease;
 }
 
-.Nav button:active{
+.Nav button:active {
     background-color: #444;
 }
 
 @media screen and (max-width: 480px) {
-    .Nav{ padding-inline: 5%; }
-    .Nav .content{ font-size: x-small; }
-    .Nav .icon{ font-size: small; }
+    .Nav {
+        padding-inline: 5%;
+    }
+
+    .Nav .content {
+        font-size: x-small;
+    }
+
+    .Nav .icon {
+        font-size: small;
+    }
 }
